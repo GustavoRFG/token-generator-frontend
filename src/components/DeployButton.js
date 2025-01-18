@@ -14,7 +14,7 @@ const DeployButton = ({ config }) => {
         feePercentage: config.feePercentage || 1, // Valor padrão para 1%
         feeRecipient: config.feeRecipient || "0xF7800D3cae5Db40e084f5deD7013c0E6D1bc76E5", // Substitua pelo endereço padrão correto
       };
-      console.log("Config being sent:", formattedConfig );
+      //console.log("Config being sent:", formattedConfig );
       const response = await deployToken(formattedConfig);
       alert(`Contract deployed! Address: ${response.address}`);
     } catch (error) {
