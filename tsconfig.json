@@ -1,32 +1,38 @@
 {
-    "compilerOptions": {
-      "noEmit": true,
-      "allowJs": true, // Permite arquivos JavaScript no projeto
-      "checkJs": false, // Desativa a verificação de tipos em arquivos JavaScript
-      "target": "ES6",                               
-      "lib": ["DOM", "DOM.Iterable", "ESNext"],      
-      "jsx": "react-jsx",                           
-      "module": "ESNext",                           
-      "moduleResolution": "Node",                  
-      "strict": true,                              
-      "esModuleInterop": true,                     
-      "skipLibCheck": true,                        
-      "forceConsistentCasingInFileNames": true,    
-      "baseUrl": "./",                              
-      "paths": {
-        "@/*": ["src/*"]
-      },
-      "allowSyntheticDefaultImports": true,       
-      "resolveJsonModule": true,                  
-      "isolatedModules": true                     
+  "compilerOptions": {
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": false,
+    "target": "ES6",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
     },
-    "include": [
-      "src"
-    ],
-    "exclude": [
-      "node_modules",
-      "build",
-      "dist"
-    ]
-  }
-  
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "**/*.test.ts", // Exclude test files
+    "**/*.test.js",  // Exclude test files
+    "node_modules",
+    "build",
+    "dist",
+    "babel__core",
+    "babel__generator",
+    "babel__template",
+    "babel__traverse"
+  ]
+}
