@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/react-chartjs-2": "^2.5.7",
-    "ajv": "^8.0.0",
+    "ajv": "^7.0.0",
     "ajv-keywords": "^4.0.0",
     "axios": "^1.7.9",
     "chart.js": "^4.4.7",

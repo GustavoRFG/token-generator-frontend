@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
@@ -30,8 +29,9 @@ function App() {
     setConfig(newConfig);
   };
 
-  const handleDeploy = () => {
-    alert('Contract Deployed! ');
+  const handleDeployComplete = () => {
+    console.log("Deployment completed successfully!");
+    alert("Deployment completed! You can proceed with additional steps.");
   };
 
   return (
@@ -43,16 +43,12 @@ function App() {
       </div>
       <div className="contract-preview">
         <ContractPreview config={config} />
-        <DeployButton config={config} onDeploy={handleDeploy}/>
-        
+        <DeployButton config={config} onDeploy={handleDeployComplete} />
       </div>
       <div className="form-container">
-      <Metrics />
+        <Metrics />
       </div>
-      
-      <footer>
-        © 2025 Token Creator. All rights reserved.
-      </footer>
+      <footer>© 2025 Token Creator. All rights reserved.</footer>
     </div>
   );
 }
