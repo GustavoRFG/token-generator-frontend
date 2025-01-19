@@ -5,7 +5,7 @@ import ConfigForm from './components/ConfigForm';
 import ContractPreview from './components/ContractPreview';
 import DeployButton from './components/DeployButton';
 import DynamicStableToken from './components/DynamicStableToken';
-import Metrics from './components/metrics/Metrics';
+// import Metrics from './components/metrics/Metrics';
 
 // Defina o tipo para as configurações
 interface Config {
@@ -44,9 +44,6 @@ function App() {
       <div className="contract-preview">
         <ContractPreview config={config} />
         <DeployButton config={config} onDeploy={handleDeployComplete} />
-      </div>
-      <div className="form-container">
-        <Metrics />
       </div>
       <footer>© 2025 Token Creator. All rights reserved.</footer>
     </div>
